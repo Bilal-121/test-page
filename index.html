@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Tech Company</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="d-flex flex-column min-vh-100">
+        <header>
+            <div class="container">
+                <h1 class="logo">DemoTech</h1>
+                <nav>
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="contactUsButton" class="nav btn btn-primary" data-toggle="modal" data-target="#contactFormModal">Contact</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="flex-fill">
+            <section id="home">
+                <div class="container text-center">
+                    <h2>Welcome to DemoTech</h2>
+                    <p>Your trusted technology partner.</p>
+                </div>
+            </section>
+
+            <section id="services">
+                <div class="container">
+                    <h2 class="text-center">Our Services</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <div class="card text-center">
+                                <img class="card-img-top" src="computer-programming-camp-abstract-concept-illustration\Wavy_Trv-02_Single-09.jpg" alt="Web Development image">
+                                <div class="card-body">
+                                    <h3 class="card-title">Web Development</h3>
+                                    <p class="card-text">We build responsive and efficient websites.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center">
+                                <img class="card-img-top" src="prototyping-process-concept-illustration\3647007.jpg" alt="App Development image">
+                                <div class="card-body">
+                                    <h3 class="card-title">App Development</h3>
+                                    <p class="card-text">Creating mobile apps that your users will love.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card text-center">
+                                <img class="card-img-top" src="cloud-hosting-concept-illustration\3155686.jpg" alt="cloud development image">
+                                <div class="card-body">
+                                    <h3 class="card-title">Cloud Solutions</h3>
+                                    <p class="card-text">Reliable and scalable cloud solutions for your business.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="container text-center">
+                    <h2>About Us</h2>
+                    <p>DemoTech is a leading technology solutions provider. We specialize in web and app development, and cloud solutions.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="bg-dark text-white text-center py-3 mt-auto">
+            <div class="container">
+                <p>&copy; 2024 DemoTech. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Contact Form Modal -->
+    <div id="contactFormModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contactFormModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactFormModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap and jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
