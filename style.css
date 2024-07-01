@@ -1,0 +1,192 @@
+/* styles.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 3px;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header .logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+
+}
+header nav ul a{
+    color: #fff !important;
+}
+
+header nav ul a:hover{
+    color: #77aaff !important;
+}
+
+.nav.btn.btn-primary {
+    color: #fff !important;
+    background-color: unset !important;
+    border-color: unset !important;
+}
+
+.nav.btn.btn-primary {
+    border: none;
+}
+
+.nav.btn.btn-primary:hover {
+    background-color: #333 !important;
+    border-color: #333 !important;
+    /*color: #77aaff ;*/
+}
+
+/*containers*/
+.row.justify-content-center{
+    margin-top: 2rem;
+}
+
+/*popup form*/
+.modal-content{
+    margin-top: 5rem;
+}
+
+/* Section Styles */
+section {
+    padding: 20px 0;
+}
+
+#home {
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#services .card {
+    margin-bottom: 20px;
+}
+
+#services .card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure the cards are centered and stack on smaller screens */
+#services .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form label {
+    margin-bottom: 5px;
+}
+
+#contact form input,
+#contact form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form button {
+    padding: 10px;
+    background: #77aaff;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Flexbox Utility Classes */
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-fill {
+    flex: 1 0 auto;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        text-align: center;
+    }
+
+    header .logo,
+    header nav {
+        float: none;
+    }
+
+    /* Ensure cards stack on smaller screens */
+    #services .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #services .row {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    #services .col-md-4 {
+        flex: 0 0 auto;
+        margin-right: 20px;
+    }
+}
